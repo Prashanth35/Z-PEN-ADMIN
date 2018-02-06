@@ -1,0 +1,118 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zpen_admin.UserPaymentDetailpage" xmlns:html="http://www.w3.org/1999/xhtml"
+		xmlns:sf="sap.ui.layout.form">
+	
+		<Page>
+	   <content>
+             <ObjectHeader title="{personalData>/name}">
+              <statuses>
+                 <ObjectStatus text="Pending Approval" state="Error"/>
+              </statuses>
+              <attributes>
+                <ObjectAttribute text="{personalData>/city} , {personalData>/country}"/>
+              </attributes>
+             </ObjectHeader>	   
+             
+             	<IconTabBar
+						id="idIconTabBar"
+						select="handleIconTabBarSelect"
+						class="sapUiResponsiveContentPadding">
+						<items>
+			<IconTabFilter
+				showAll="true"
+				text="Personal Detail"
+				key="All">
+			           <sf:SimpleForm id="idsfP"> 
+  
+                <sf:content>
+                   <core:Title text="Personal Detail"/>
+                   <Label text="Full Name"/>
+                   <Text text="{personalData>/fullname}"/>
+                   <Label text="Father Name"/>
+                   <Text text="{personalData>/fathername}"/>
+                   <Label text="Mobile"/>
+                   <Text text="{personalData>/mobilenumber}"/>
+                   <Label text="Alternative Mobile"/>
+                   <Text text="{personalData>/alernaternatnum}"/>
+                   <core:Title/>
+                   <Label text="Gender"/>
+                   <Text text="{personalData>/gender}"/>
+                   <Label text="Marital Status"/>
+                   <Text text="{personalData>/maritalstatus}"/>
+                   <Label text="Date of Birth"/>
+                   <Text text="{personalData>/dob}"/>
+                   <Label text="Email"/>
+                   <Text text="{personalData>/email}"/>
+
+               </sf:content>
+            
+             </sf:SimpleForm>
+			          	
+				</IconTabFilter>		 
+                <IconTabSeparator />
+              <IconTabFilter
+				showAll="true"
+				text="Address Details"
+				key="All">
+			  <sf:SimpleForm>
+   
+                <sf:content>
+                   <core:Title text="Permanent Address"/>
+                   <Label text="Hno/Street"/>
+                   <Text text="104, MCR Lane"/>
+                   <Label text="City"/>
+                   <Text text="Hyderabad"/>
+                   <Label text="Country"/>
+                   <Text text="India"/>
+                   <Label text="ZIP"/>
+                   <Text text="500000"/>
+                   <core:Title text="Present Address"/>
+                   <Label text="Hno/Street"/>
+                   <Text text="104, MCR Lane"/>
+                   <Label text="City"/>
+                   <Text text="Hyderabad"/>
+                   <Label text="Country"/>
+                   <Text text="India"/>
+                   <Label text="ZIP"/>
+                   <Text text="500000"/>
+
+               </sf:content>
+            
+             </sf:SimpleForm>
+			          	
+				</IconTabFilter>	
+				<IconTabSeparator />
+			 <IconTabFilter
+				showAll="true"
+				text="Document Submitted" class="custIconTabFilter">
+				        <TileContainer id ="idTileContainer">
+					   <tiles>
+					      <StandardTile title = "Aadhar Card" info="Verification Required" press="onAadharCard" id="idaadhaarCard"
+					      infoState="Error"
+					      />
+					      <StandardTile title = "Voter Card" info="Verification Required" press="onVoterCard"   infoState="Error"/>
+					      <StandardTile title = "PAN Card" info="Verification Required" press="onPanCard"   infoState="Error"/>
+					      <StandardTile title = "Passport" info="Verification Required"   infoState="Error"/>
+					   </tiles>
+					</TileContainer>
+                 
+			          	
+				</IconTabFilter>		
+				           
+             </items>
+             </IconTabBar>
+             </content>
+             <footer>
+               <Bar>
+                 <contentRight>
+                    <Button text="Approve" />
+                    <Button text="Reject"/>
+                    <Button text="Follow Up Pending"/>
+                    
+                 </contentRight>
+               </Bar>
+             </footer>
+         </Page>  
+	
+	
+</core:View>

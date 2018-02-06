@@ -1,0 +1,141 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		xmlns:sf="sap.ui.layout.form"
+		controllerName="zpen_admin.LoanPaymentHistory" xmlns:html="http://www.w3.org/1999/xhtml">
+	<SplitApp>
+	   <masterPages>
+	   <Page title="Requests(8)" class="sapUiContentPadding"
+		showNavButton="true"
+		navButtonPress="onNavPress">
+	   
+	        <List>
+	        <headerToolbar>
+	          <Toolbar>
+	            <SearchField />
+	          </Toolbar>
+	        </headerToolbar>
+	          <StandardListItem title="Adhithi Krithi" description="Hyderabad, India" type="Navigation"/>
+	          <StandardListItem title="Frank Zollers" description="Kukatpally India" type="Navigation"/>
+	          <StandardListItem title="Krithi A" description="Ameerpet, India" type="Navigation"/>
+	          <StandardListItem title="Surender Naik" description="Nizamabad, India" type="Navigation"/>
+	          <StandardListItem title="S-Max Technologies" description="KPHB, India" type="Navigation"/>
+	          <StandardListItem title="Rohit Sharma" description="Mumbai, India" type="Navigation"/>
+	          <StandardListItem title="Virat Kohli" description="Bangolore, India" type="Navigation"/>
+	          <StandardListItem title="Sehwag Virendra" description="Delhi, India" type="Navigation"/>
+	        </List>
+	      </Page>  
+	   </masterPages>
+	   <detailPages>
+	   <Page>
+	   <content>
+             <ObjectHeader title="Adhithi Krithi">
+              <statuses>
+                 <ObjectStatus text="Pending Approval" state="Error"/>
+              </statuses>
+              <attributes>
+                <ObjectAttribute text="Hyderabad, India"/>
+              </attributes>
+             </ObjectHeader>	   
+             
+             	<IconTabBar
+						id="idIconTabBar"
+						select="handleIconTabBarSelect"
+						class="sapUiResponsiveContentPadding">
+						<items>
+			<IconTabFilter
+				showAll="true"
+				text="Personal Detail"
+				key="All">
+			           <sf:SimpleForm>
+  
+                <sf:content>
+                   <core:Title text="Personal Detail"/>
+                   <Label text="Full Name"/>
+                   <Text text="Adhithi Krithi"/>
+                   <Label text="Father Name"/>
+                   <Text text="Vadihiti Krithi"/>
+                   <Label text="Mobile"/>
+                   <Text text="9999999999"/>
+                   <Label text="Mobile"/>
+                   <Text text="9999999999"/>
+                   <core:Title/>
+                   <Label text="Gender"/>
+                   <Text text="Male"/>
+                   <Label text="Marital Status"/>
+                   <Text text="Married"/>
+                   <Label text="Date of Birth"/>
+                   <Text text="21/12/2112"/>
+                   <Label text="Email"/>
+                   <Text text="vadihiti.krithi@in.com"/>
+
+               </sf:content>
+            
+             </sf:SimpleForm>
+			          	
+				</IconTabFilter>		 
+                <IconTabSeparator />
+              <IconTabFilter
+				showAll="true"
+				text="Address Details"
+				key="All">
+			  <sf:SimpleForm>
+   
+                <sf:content>
+                   <core:Title text="Permanent Address"/>
+                   <Label text="Hno/Street"/>
+                   <Text text="104, MCR Lane"/>
+                   <Label text="City"/>
+                   <Text text="Hyderabad"/>
+                   <Label text="Country"/>
+                   <Text text="India"/>
+                   <Label text="ZIP"/>
+                   <Text text="500000"/>
+                   <core:Title text="Present Address"/>
+                   <Label text="Hno/Street"/>
+                   <Text text="104, MCR Lane"/>
+                   <Label text="City"/>
+                   <Text text="Hyderabad"/>
+                   <Label text="Country"/>
+                   <Text text="India"/>
+                   <Label text="ZIP"/>
+                   <Text text="500000"/>
+
+               </sf:content>
+            
+             </sf:SimpleForm>
+			          	
+				</IconTabFilter>	
+				<IconTabSeparator />
+			 <IconTabFilter
+				showAll="true"
+				text="Document Submitted" class="custIconTabFilter">
+				        <TileContainer id ="idTileContainer">
+					   <tiles>
+					      <StandardTile title = "Aadhar Card" info="Verification Required" press="onAadharCard" id="idaadhaarCard"
+					      infoState="Error"
+					      />
+					      <StandardTile title = "Voter Card" info="Verification Required" press="onVoterCard"   infoState="Error"/>
+					      <StandardTile title = "PAN Card" info="Verification Required" press="onPanCard"   infoState="Error"/>
+					      <StandardTile title = "Passport" info="Verification Required"   infoState="Error"/>
+					   </tiles>
+					</TileContainer>
+                 
+			          	
+				</IconTabFilter>		
+				           
+             </items>
+             </IconTabBar>
+             </content>
+             <footer>
+               <Bar>
+                 <contentRight>
+                    <Button text="Approve" />
+                    <Button text="Reject"/>
+                    <Button text="Follow Up Pending"/>
+                    
+                 </contentRight>
+               </Bar>
+             </footer>
+         </Page>    
+	   </detailPages>
+	</SplitApp>
+</core:View>

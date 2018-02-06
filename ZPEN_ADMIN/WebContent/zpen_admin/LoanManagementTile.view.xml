@@ -1,0 +1,17 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zpen_admin.LoanManagementTile" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Loan Management" 
+		class="sapUiContentPadding"
+		showNavButton="true" navButtonPress="onNavPress">
+		<content>
+			 <TileContainer>
+	   <tiles>
+	      <StandardTile title = "Loan Requests" press="onLoanRequests"/>
+	      <StandardTile title = "Loan Barrowers" press="onLoanBarrowers"/>
+	      <StandardTile title = "Loan Payment History" press="onLoanPaymentHistory"/>
+	       <StandardTile title = "Defaulters" press="onDefaulters"/>
+	   </tiles>
+	</TileContainer>
+		</content>
+	</Page>
+</core:View>

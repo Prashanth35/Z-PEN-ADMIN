@@ -1,0 +1,16 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zpen_admin.UserManagementTiles" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="User Management" 
+		class="sapUiContentPadding"
+		showNavButton="true" navButtonPress="onNavPress">
+		<content>
+	    <TileContainer>
+	   <tiles>
+	      <StandardTile title = "User Registration Approval Process" press="onUserRegistrations"/>
+	      <StandardTile title = "Payment History" info="Check History" press="onPaymentHistory"/>
+	      <StandardTile title = "Payment Pendings" press="onPaymentPendings"/>
+	   </tiles>
+	</TileContainer>
+		</content>
+	</Page>
+</core:View>

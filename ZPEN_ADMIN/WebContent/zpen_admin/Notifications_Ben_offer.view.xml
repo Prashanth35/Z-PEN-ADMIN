@@ -1,0 +1,92 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:sf="sap.ui.layout.form"
+		controllerName="zpen_admin.Notifications_Ben_offer" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+	         <IconTabBar
+						id="idIconTabBar"
+						select="handleIconTabBarSelect"
+						class="sapUiResponsiveContentPadding">
+						<items>
+			<IconTabFilter
+				showAll="true"
+				text="Notification"
+				key="All">
+			           <sf:SimpleForm>
+  
+                <sf:content>
+                   <core:Title text="Personal Detail"/>
+                   <Label text="Full Name"/>
+                   <Text text="Adhithi Krithi"/>
+                   <Label text="Father Name"/>
+                   <Text text="Vadihiti Krithi"/>
+                   <Label text="Mobile"/>
+                   <Text text="9999999999"/>
+                   <Label text="Mobile"/>
+                   <Text text="9999999999"/>
+                   <core:Title/>
+                   <Label text="Gender"/>
+                   <Text text="Male"/>
+                   <Label text="Marital Status"/>
+                   <Text text="Married"/>
+                   <Label text="Date of Birth"/>
+                   <Text text="21/12/2112"/>
+                   <Label text="Email"/>
+                   <Text text="vadihiti.krithi@in.com"/>
+
+               </sf:content>
+            
+             </sf:SimpleForm>
+			          	
+				</IconTabFilter>		 
+                <IconTabSeparator />
+              <IconTabFilter
+				showAll="true"
+				text="Benefits"
+				key="All">
+			  <sf:SimpleForm>
+   
+                <sf:content>
+                   <core:Title text="Permanent Address"/>
+                   <Label text="Hno/Street"/>
+                   <Text text="104, MCR Lane"/>
+                   <Label text="City"/>
+                   <Text text="Hyderabad"/>
+                   <Label text="Country"/>
+                   <Text text="India"/>
+                   <Label text="ZIP"/>
+                   <Text text="500000"/>
+                   <core:Title text="Present Address"/>
+                   <Label text="Hno/Street"/>
+                   <Text text="104, MCR Lane"/>
+                   <Label text="City"/>
+                   <Text text="Hyderabad"/>
+                   <Label text="Country"/>
+                   <Text text="India"/>
+                   <Label text="ZIP"/>
+                   <Text text="500000"/>
+
+               </sf:content>
+            
+             </sf:SimpleForm>
+			          	
+				</IconTabFilter>	
+				<IconTabSeparator />
+			 <IconTabFilter
+				showAll="true"
+				text="Offers" class="custIconTabFilter">
+				        <sf:SimpleForm>
+   
+                <sf:content>
+                  <TextArea /> 
+                  
+               </sf:content>
+            
+             </sf:SimpleForm>
+				</IconTabFilter>		
+				           
+             </items>
+             </IconTabBar>
+		</content>
+	</Page>
+</core:View>

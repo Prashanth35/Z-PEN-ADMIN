@@ -1,0 +1,18 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zpen_admin.AdminMainTile" xmlns:html="http://www.w3.org/1999/xhtml">
+		<Page id="idPage"
+		title="Control Panel" 
+		class="sapUiContentPadding">
+	<content>
+	<TileContainer id ="idTileContainer">
+	   <tiles>
+	      <StandardTile title = "User Management, User Registration, User Payment" info="Read More" press="onUserManagement"/>
+	      <StandardTile title = "Account Management" info="Read More" press="onAccountManagement"/>
+	      <StandardTile title = "Loan Management/ Requests/ Barrowers/ History/ Defaulters" info="Read More" press="onLoanManagement"/>
+	      <StandardTile title = "Notifications, Benefits and Offers" info="Read More" press="onNotifications"/>
+	      <StandardTile title = "Investments" info="Read More" press="onInvestments"/>
+	   </tiles>
+	</TileContainer>
+</content>
+	</Page>
+</core:View>

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		<link rel="stylesheet" href="css/custom.css">
+		<script>
+				sap.ui.localResources("zpen_admin");
+				var app = new sap.m.App({initialPage:"idLogin1"});
+				var page = sap.ui.view({id:"idLogin1", viewName:"zpen_admin.Login", type:sap.ui.core.mvc.ViewType.XML});
+				app.addPage(page);
+				
+				 var page2 = sap.ui.view({
+						id : "idUserTile",
+						viewName : "zpen_admin.AdminMainTile",
+						type : sap.ui.core.mvc.ViewType.XML
+					});
+					app.addPage(page2);
+					
+					 var page3 = sap.ui.view({
+							id : "idUserManagementTiles",
+							viewName : "zpen_admin.UserManagementTiles",
+							type : sap.ui.core.mvc.ViewType.XML
+						});
+						app.addPage(page3);
+					
+						 var page4 = sap.ui.view({
+								id : "idUserManagementRequests",
+								viewName : "zpen_admin.UserManagementRequests",
+								type : sap.ui.core.mvc.ViewType.XML
+							});
+							app.addPage(page4);	
+					
+							 var page6 = sap.ui.view({
+									id : "idUserPaymentHistory",
+									viewName : "zpen_admin.UserPaymentHistory",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page6);	
+						
+								var page7 = sap.ui.view({
+									id : "idUserPaymentPending",
+									viewName : "zpen_admin.UserPaymentPending",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page7);	
+								
+								var page8 = sap.ui.view({
+									id : "idLoanManagementTile",
+									viewName : "zpen_admin.LoanManagementTile",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page8);	
+								
+								var page9 = sap.ui.view({
+									id : "idLoanRequests",
+									viewName : "zpen_admin.LoanRequests",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page9);
+								
+								var page10 = sap.ui.view({
+									id : "idAccountManagement",
+									viewName : "zpen_admin.AccountManagement",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page10);
+								
+								var page11 = sap.ui.view({
+									id : "idLoanBarrowers",
+									viewName : "zpen_admin.LoanBarrowers",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page11);
+								
+								var page12 = sap.ui.view({
+									id : "idLoanPaymentHistory",
+									viewName : "zpen_admin.LoanPaymentHistory",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page12);
+								
+								var page13 = sap.ui.view({
+									id : "idLoanDefaulters",
+									viewName : "zpen_admin.LoanDefaulters",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page13);
+								
+								var page14 = sap.ui.view({
+									id : "idNotifications",
+									viewName : "zpen_admin.Notifications_Ben_offer",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page14);
+								
+								var page15 = sap.ui.view({
+									id : "idPendingpayments",
+									viewName : "zpen_admin.UserPaymentpendingDetails",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page15);
+								
+								/* var page16 = sap.ui.view({
+									id : "idPendingpaymentDetailpage",
+									viewName : "zpen_admin.UserPaymentDetailpage",
+									type : sap.ui.core.mvc.ViewType.XML
+								});
+								app.addPage(page16); */
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

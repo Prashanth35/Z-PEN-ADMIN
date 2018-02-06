@@ -1,0 +1,19 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zpen_admin.UserPaymentpendingDetails" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sf="sap.ui.layout.form">
+	<SplitApp>
+	   <masterPages>
+	   <Page title="Requests(8)" class="sapUiContentPadding"
+		showNavButton="true"
+		navButtonPress="onNavPress"  id="idPage">
+	                 
+	        <List  id="idlist">	
+	       
+  </List>
+	      </Page>  
+	   </masterPages>
+	   <detailPages>
+   <mvc:XMLView viewName="zpen_admin.UserPaymentDetailpage" id="idDetail"/>
+	   </detailPages>
+	</SplitApp>
+
+</core:View>

@@ -1,0 +1,16 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		xmlns:sf="sap.ui.layout.form"
+		controllerName="zpen_admin.AccountManagement" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Account Management"
+	showNavButton="true"
+		navButtonPress="onNavPress">
+		<content>
+		 <sf:SimpleForm>
+	        <Label text="Account Balance"/>
+	        <Text text="Rs.123456"/>
+	        <Label text="Deficit Amount"/>
+	        <Text text="Rs.1234"/>
+	      </sf:SimpleForm>  
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,23 @@
+{
+"tileData":[
+			{
+				"header":"User Management",
+				"subheader":"Check History",
+				"numberofPendings" : "2"
+			},
+			{
+				"header":"Account Management",
+				"subheader":"Check Pendings"
+		    },{
+				"header":"Loan Management",
+				"subheader":"Check Notifications",
+				"numberofPendings" : "4"
+			},
+			{
+				"header":"Notifications Management"
+			},
+			{
+				"header":"Investments"
+			}
+		]	   		
+}			

@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+   <Dialog id="idDialog">
+      <content>
+         <Image id="idImage"/>
+      </content>
+      <buttons>
+         <Button text="Verified" press="onVerified"/>
+         <Button text="Rejected" press="onRejected"/>
+         <Button text="Followup Required" press="onFollowUp"/>
+      </buttons>
+   </Dialog>
+</core:FragmentDefinition>

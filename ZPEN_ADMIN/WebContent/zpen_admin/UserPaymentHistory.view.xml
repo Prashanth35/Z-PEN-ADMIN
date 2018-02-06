@@ -1,0 +1,82 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		xmlns:l="sap.ui.layout"
+		controllerName="zpen_admin.UserPaymentHistory" xmlns:html="http://www.w3.org/1999/xhtml">
+		<Page
+		title="Payment History" id="idPage"
+		class="sapUiContentPadding"
+		showNavButton="true"
+		navButtonPress="onNavPress">	
+		<content>
+           <List id="idList" background="Transparent">
+              <headerToolbar>
+				<Toolbar>
+					<Label text="From Year"/>
+					<ComboBox>
+					    <core:Item text="2010"/>
+					    <core:Item text="2011"/>
+					    <core:Item text="2012"/>
+					    <core:Item text="2013"/>
+					    <core:Item text="2014"/>
+					</ComboBox>
+					<Label text="To Year"/>
+					<ComboBox>
+					    <core:Item text="2010"/>
+					    <core:Item text="2011"/>
+					    <core:Item text="2012"/>
+					    <core:Item text="2013"/>
+					    <core:Item text="2014"/>
+					</ComboBox>
+					<ToolbarSpacer />
+					<Label text="From Month"/>
+					<ComboBox>
+					    <core:Item text="January"/>
+					    <core:Item text="February"/>
+					    <core:Item text="March"/>
+					    <core:Item text="April"/>
+					    <core:Item text="May"/>
+					     <core:Item text="June"/>
+					      <core:Item text="July"/>
+					       <core:Item text="August"/>
+					        <core:Item text="September"/>
+					         <core:Item text="October"/>
+					          <core:Item text="November"/>
+					           <core:Item text="December"/>
+					           
+					</ComboBox>
+					<Label text="To Month"/>
+					<ComboBox>
+					    <core:Item text="January"/>
+					    <core:Item text="February"/>
+					    <core:Item text="March"/>
+					    <core:Item text="April"/>
+					    <core:Item text="May"/>
+					     <core:Item text="June"/>
+					      <core:Item text="July"/>
+					       <core:Item text="August"/>
+					        <core:Item text="September"/>
+					         <core:Item text="October"/>
+					          <core:Item text="November"/>
+					           <core:Item text="December"/>
+					</ComboBox>
+
+				</Toolbar>
+			</headerToolbar>
+			<infoToolbar>
+			  <Toolbar>
+			  					<ToolbarSpacer />
+					<SearchField placeholder="Search by Name" width="25%"/>
+			  </Toolbar>
+			</infoToolbar>
+			<items>
+			  <StandardListItem title="2016"/>
+			  <StandardListItem title="2016"/>
+			  <StandardListItem title="2016"/>
+			  <StandardListItem title="2016"/>
+			  <StandardListItem title="2016"/>
+			  <StandardListItem title="2016"/>
+			</items>
+           </List>
+	   
+		</content>
+	</Page>
+</core:View>

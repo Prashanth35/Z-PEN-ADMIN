@@ -1,0 +1,20 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="zpen_admin.UserPaymentPending" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Pendings"
+	showNavButton="true"
+		navButtonPress="onNavPress"
+	>
+		<content>
+	      <List items="{/paymentData}">
+	       <items>
+	         <ObjectListItem title="{month} {year}" number="Rs.{amount}">
+	         <attributes>
+	           <ObjectAttribute text="NO.of persons:{members}"></ObjectAttribute>
+	           <ObjectAttribute text="Pay Now" active="true" press="Onpress"></ObjectAttribute>
+	         </attributes>
+	         </ObjectListItem>
+	       </items>
+	      </List>
+		</content>
+	</Page>
+</core:View>
